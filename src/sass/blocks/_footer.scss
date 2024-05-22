@@ -47,8 +47,13 @@
         border: 2px solid #fff;
         border-radius: 100%;
         margin: 0 15px;
+        transition: .2s all;
+        &:hover {
+            box-shadow: 2px 2px 20px #fff;
+            background-color: $hover-color;
+        }
         img {
             height: 27px;
-        }
+        } 
     }
 }

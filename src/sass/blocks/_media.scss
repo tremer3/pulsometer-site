@@ -12,6 +12,14 @@
     .consultation {
         padding: 100px 40px 92px 40px;
     }
+
+    /* Catalog */ 
+    .catalog__content {
+        justify-content: center;
+    }
+    .catalog-item {
+        margin-left: 20px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -92,6 +100,13 @@
     }
     .feed-form {
         margin: 0 auto;
+        margin-top: 20px;
+    }
+    /* Catalog */ 
+    .catalog__tabs {
+        flex-direction: column;
+    }
+    .catalog__tab {
         margin-top: 20px;
     }
 }

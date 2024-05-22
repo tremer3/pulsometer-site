@@ -20,6 +20,21 @@
     .catalog-item {
         margin-left: 20px;
     }
+
+    /* Testimonials */
+    .testimonials__item {
+        display: block;
+    }
+    .testimonials__img {
+        display: block;
+        margin: 0 auto;
+    }
+    .testimonials__wrapper {
+        text-align: center;
+    }
+    .testimonials__name {
+        margin-top: 15px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -108,6 +123,11 @@
     }
     .catalog__tab {
         margin-top: 20px;
+    }
+
+    /* Teatimonials */
+    .testimonials__descr {
+        font-size: 15px;
     }
 }
 

@@ -233,4 +233,24 @@
         top: auto;
         bottom: 110px;
     }
+
+    /* modal */
+    .modal {
+        width: 300px;
+        &__close {
+            right: -30px;
+            font-size: 30px;
+        }
+    }
+}
+
+@media (max-width: 374px) {
+    /* modal */
+    .modal {
+        width: 250px;
+        &__close {
+            right: -25px;
+            font-size: 30px;
+        }
+    }
 }

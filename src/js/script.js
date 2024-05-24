@@ -66,4 +66,65 @@ $(document).ready(function(){
             $('.overlay, #order').fadeIn('slow');
         });
     });
+
+    // Jquery.validate
+    // $('#consultation-form').validate();
+    // $('#consultation form').validate({
+    //     rules: {
+    //         name: {
+    //             required: true,
+    //             minlength: 2
+    //           },
+    //         phone: "required",
+    //         email: {
+    //             required: true,
+    //             email: true
+    //         }
+    //     },
+    //     messages: {
+    //         name: {
+    //             required: "Пожалуйста, введите своё имя",
+    //             minlength: jQuery.validator.format("Введите {0} символа!")
+    //           },
+    //         phone: "Пожалуйста, введите свой номер телефона",
+    //         email: {
+    //           required: "Пожалуйста, введите свою почту",
+    //           email: "Неправильно введен адрес почты"
+    //         }
+    //       }
+    // });
+    // $('#order form').validate();
+
+    function validateForms(form) {
+        $(form).validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2
+                  },
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: {
+                    required: "Пожалуйста, введите своё имя",
+                    minlength: jQuery.validator.format("Введите {0} символа!")
+                  },
+                phone: "Пожалуйста, введите свой номер телефона",
+                email: {
+                  required: "Пожалуйста, введите свою почту",
+                  email: "Неправильно введен адрес почты"
+                }
+              }
+        });
+    };
+
+    validateForms('#consultation-form');
+    validateForms('#consultation form');
+    validateForms('#order form');
 });
+
+
